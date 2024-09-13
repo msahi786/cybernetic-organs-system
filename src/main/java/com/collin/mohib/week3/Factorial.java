@@ -4,7 +4,7 @@ public class Factorial {
 
     public static void main(String[] args){
         System.out.println("Hello world");
-        int n = 4;
+        int n = 5;
         int fac = factorial(n);
         System.out.println("factorial of "+n+ " is "+fac);
     }
