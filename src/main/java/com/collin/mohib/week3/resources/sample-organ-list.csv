@@ -1,0 +1,171 @@
+name,model,functionality,compatibility
+Kidney,CyberKidneyX4,Regulates electrolytes,Type AB
+Heart,CyberHeartX1,Pumps blood,Type O
+Arm,CyberArmG7,Enhanced strength,Universal
+Eye,CyberEyeV2,Enhanced vision,Type A
+Leg,CyberLegX9,Enhanced mobility,Type B
+Brain,CyberBrainN1,Neural enhancement,Type A
+Lung,CyberLungZ3,Filters air,Type B
+Skin,CyberSkinD2,Temperature regulation,Universal
+Liver,CyberLiverA5,Detoxifies blood,Type O
+Ear,CyberEarC3,Enhanced hearing,Type O
+Kidney,CyberKidneyX4,Regulates electrolytes,Type AB
+Heart,CyberHeartY2,Pumps blood,Type A
+Eye,CyberEyeX1,Night vision,Universal
+Arm,CyberArmG7,Enhanced strength,Universal
+Lung,CyberLungV8,Increased oxygen intake,Type AB
+Leg,CyberLegX9,Enhanced mobility,Type B
+Brain,CyberBrainN1,Neural enhancement,Type A
+Skin,CyberSkinD2,Temperature regulation,Universal
+Liver,CyberLiverQ4,Regulates enzymes,Type B
+Ear,CyberEarC3,Enhanced hearing,Type O
+Kidney,CyberKidneyY5,Toxin filtration,Type O
+Heart,CyberHeartY2,Pumps blood,Type A
+Arm,CyberArmP2,Precision grip,Type A
+Eye,CyberEyeX1,Night vision,Universal
+Leg,CyberLegM6,Speed enhancement,Type O
+Lung,CyberLungV8,Increased oxygen intake,Type AB
+Brain,CyberBrainZ2,Memory boost,Type AB
+Skin,CyberSkinF4,Shock absorption,Type B
+Ear,CyberEarX5,Directional hearing,Type AB
+Liver,CyberLiverQ4,Regulates enzymes,Type B
+Heart,CyberHeartX1,Pumps blood,Type O
+Kidney,CyberKidneyY5,Toxin filtration,Type O
+Arm,CyberArmP2,Precision grip,Type A
+Leg,CyberLegM6,Speed enhancement,Type O
+Eye,CyberEyeV2,Enhanced vision,Type A
+Brain,CyberBrainZ2,Memory boost,Type AB
+Lung,CyberLungZ3,Filters air,Type B
+Skin,CyberSkinF4,Shock absorption,Type B
+Liver,CyberLiverA5,Detoxifies blood,Type O
+Kidney,CyberKidneyX4,Regulates electrolytes,Type AB
+Ear,CyberEarX5,Directional hearing,Type AB
+Arm,CyberArmG7,Enhanced strength,Universal
+Leg,CyberLegX9,Enhanced mobility,Type B
+Heart,CyberHeartX1,Pumps blood,Type O
+Eye,CyberEyeV2,Enhanced vision,Type A
+Brain,CyberBrainN1,Neural enhancement,Type A
+Lung,CyberLungZ3,Filters air,Type B
+Skin,CyberSkinD2,Temperature regulation,Universal
+Liver,CyberLiverA5,Detoxifies blood,Type O
+Ear,CyberEarC3,Enhanced hearing,Type O
+Kidney,CyberKidneyX4,Regulates electrolytes,Type AB
+Heart,CyberHeartY2,Pumps blood,Type A
+Arm,CyberArmG7,Enhanced strength,Universal
+Leg,CyberLegX9,Enhanced mobility,Type B
+Eye,CyberEyeX1,Night vision,Universal
+Lung,CyberLungV8,Increased oxygen intake,Type AB
+Brain,CyberBrainN1,Neural enhancement,Type A
+Liver,CyberLiverQ4,Regulates enzymes,Type B
+Skin,CyberSkinD2,Temperature regulation,Universal
+Kidney,CyberKidneyY5,Toxin filtration,Type O
+Ear,CyberEarC3,Enhanced hearing,Type O
+Heart,CyberHeartY2,Pumps blood,Type A
+Arm,CyberArmP2,Precision grip,Type A
+Eye,CyberEyeX1,Night vision,Universal
+Leg,CyberLegM6,Speed enhancement,Type O
+Brain,CyberBrainZ2,Memory boost,Type AB
+Lung,CyberLungV8,Increased oxygen intake,Type AB
+Skin,CyberSkinF4,Shock absorption,Type B
+Ear,CyberEarX5,Directional hearing,Type AB
+Liver,CyberLiverQ4,Regulates enzymes,Type B
+Kidney,CyberKidneyY5,Toxin filtration,Type O
+Arm,CyberArmP2,Precision grip,Type A
+Leg,CyberLegM6,Speed enhancement,Type O
+Brain,CyberBrainZ2,Memory boost,Type AB
+Skin,CyberSkinF4,Shock absorption,Type B
+Ear,CyberEarX5,Directional hearing,Type AB
+Liver,CyberLiverA5,Detoxifies blood,Type O
+Heart,CyberHeartX1,Pumps blood,Type O
+Kidney,CyberKidneyY5,Toxin filtration,Type O
+Arm,CyberArmP2,Precision grip,Type O
+Heart,CyberHeartZ3,Advanced circulation,Type B
+Eye,CyberEyeY3,Infrared vision,Type AB
+Leg,CyberLegZ7,Jump enhancement,Type A
+Brain,CyberBrainX3,AI integration,Type O
+Lung,CyberLungY5,Pollution filtration,Type A
+Skin,CyberSkinX1,Waterproof,Universal
+Ear,CyberEarY2,Noise cancellation,Type B
+Liver,CyberLiverX7,Enhanced metabolism,Type AB
+Kidney,CyberKidneyZ1,Advanced filtration,Type O
+Arm,CyberArmX5,Multi-tool integration,Type B
+Heart,CyberHeartZ4,Advanced circulation,Type AB
+Eye,CyberEyeY4,Infrared vision,Type O
+Leg,CyberLegZ8,Jump enhancement,Type B
+Brain,CyberBrainX4,AI integration,Type A
+Lung,CyberLungY6,Pollution filtration,Type B
+Skin,CyberSkinX2,Waterproof,Type A
+Ear,CyberEarY3,Noise cancellation,Type O
+Liver,CyberLiverX8,Enhanced metabolism,Type A
+Kidney,CyberKidneyZ2,Advanced filtration,Type B
+Arm,CyberArmX6,Multi-tool integration,Type A
+Heart,CyberHeartZ5,Advanced circulation,Type O
+Eye,CyberEyeY5,Infrared vision,Type B
+Leg,CyberLegZ9,Jump enhancement,Type O
+Brain,CyberBrainX5,AI integration,Type B
+Lung,CyberLungY7,Pollution filtration,Type O
+Skin,CyberSkinX3,Waterproof,Type B
+Ear,CyberEarY4,Noise cancellation,Type A
+Liver,CyberLiverX9,Enhanced metabolism,Type O
+Kidney,CyberKidneyZ3,Advanced filtration,Type A
+Arm,CyberArmX7,Multi-tool integration,Type O
+Heart,CyberHeartZ6,Advanced circulation,Type A
+Eye,CyberEyeY6,Infrared vision,Type B
+Leg,CyberLegZ10,Jump enhancement,Type O
+Brain,CyberBrainX6,AI integration,Type A
+Lung,CyberLungY8,Pollution filtration,Type B
+Skin,CyberSkinX4,Waterproof,Type O
+Ear,CyberEarY5,Noise cancellation,Type B
+Liver,CyberLiverX10,Enhanced metabolism,Type A
+Kidney,CyberKidneyZ4,Advanced filtration,Type B
+Arm,CyberArmX8,Multi-tool integration,Type B
+Heart,CyberHeartZ7,Advanced circulation,Type O
+Eye,CyberEyeY7,Infrared vision,Type A
+Leg,CyberLegZ11,Jump enhancement,Type B
+Brain,CyberBrainX7,AI integration,Type O
+Lung,CyberLungY9,Pollution filtration,Type A
+Skin,CyberSkinX5,Waterproof,Type B
+Ear,CyberEarY6,Noise cancellation,Type O
+Liver,CyberLiverX11,Enhanced metabolism,Type B
+Kidney,CyberKidneyZ5,Advanced filtration,Type A
+Arm,CyberArmX9,Multi-tool integration,Type O
+Heart,CyberHeartZ8,Advanced circulation,Type B
+Eye,CyberEyeY8,Infrared vision,Type O
+Leg,CyberLegZ12,Jump enhancement,Type A
+Brain,CyberBrainX8,AI integration,Type B
+Lung,CyberLungY10,Pollution filtration,Type O
+Skin,CyberSkinX6,Waterproof,Type A
+Ear,CyberEarY7,Noise cancellation,Type B
+Liver,CyberLiverX12,Enhanced metabolism,Type O
+Kidney,CyberKidneyZ6,Advanced filtration,Type B
+Arm,CyberArmX10,Multi-tool integration,Type A
+Heart,CyberHeartZ9,Advanced circulation,Type O
+Eye,CyberEyeY9,Infrared vision,Type B
+Leg,CyberLegZ13,Jump enhancement,Type O
+Brain,CyberBrainX9,AI integration,Type A
+Lung,CyberLungY11,Pollution filtration,Type B
+Skin,CyberSkinX7,Waterproof,Type O
+Ear,CyberEarY8,Noise cancellation,Type A
+Liver,CyberLiverX13,Enhanced metabolism,Type B
+Kidney,CyberKidneyZ7,Advanced filtration,Type O
+Arm,CyberArmX11,Multi-tool integration,Type B
+Heart,CyberHeartZ10,Advanced circulation,Type A
+Eye,CyberEyeY10,Infrared vision,Type B
+Leg,CyberLegZ14,Jump enhancement,Type O
+Brain,CyberBrainX10,AI integration,Type B
+Lung,CyberLungY12,Pollution filtration,Type A
+Skin,CyberSkinX8,Waterproof,Type B
+Ear,CyberEarY9,Noise cancellation,Type O
+Liver,CyberLiverX14,Enhanced metabolism,Type A
+Kidney,CyberKidneyZ8,Advanced filtration,Type B
+Arm,CyberArmX12,Multi-tool integration,Type O
+Heart,CyberHeartZ11,Advanced circulation,Type B
+Eye,CyberEyeY11,Infrared vision,Type A
+Leg,CyberLegZ15,Jump enhancement,Type B
+Brain,CyberBrainX11,AI integration,Type O
+Lung,CyberLungY13,Pollution filtration,Type B
+Skin,CyberSkinX9,Waterproof,Type A
+Ear,CyberEarY10,Noise cancellation,Type B
+Liver,CyberLiverX15,Enhanced metabolism,Type O
+Kidney,CyberKidneyZ9,Advanced filtration,Type A
+Arm,CyberArmX13,Multi-tool integration,Type B
