@@ -24,7 +24,7 @@ public class PatientWaitingList {
      * @return The next patient in the waiting list.
      */
     public Patient removeNextPatient() {
-        return waitingList.remove();
+        return waitingList.poll();
     }
 
     /**

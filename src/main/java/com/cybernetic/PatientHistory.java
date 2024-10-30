@@ -23,7 +23,10 @@ public class PatientHistory {
      * @return The most recent medical event.
      */
     public String viewLatestEvent() {
-        return medicalHistory.peek();
+        if (!isEmpty()) {
+            return medicalHistory.peek();
+        }
+        return "No medical events to remove.";
     }
 
     /**
@@ -31,7 +34,11 @@ public class PatientHistory {
      * @return The most recent medical event.
      */
     public String removeMostRecentEvent() {
-        return medicalHistory.pop();
+        if (!isEmpty()) {
+            return medicalHistory.pop();
+        }
+        return "No medical events to remove.";
+
     }
 
     /**
