@@ -1,4 +1,6 @@
 package com.cybernetic;
+
+
 import lombok.Data;
 
 @Data
@@ -15,5 +17,9 @@ class Organ {
         this.bloodType = bloodType;
         this.weight = weight;
         this.hlaType = hlaType;
+    }
+
+    public String getName() {
+        return name;
     }
 }

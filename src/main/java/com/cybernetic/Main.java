@@ -1,71 +1,55 @@
 package com.cybernetic;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
-import java.util.stream.Collectors;
 
 public class Main {
-
     public static void main(String[] args) {
-        List<Organ> organs = Arrays.asList(
-                new Organ("H1", "Heart", "A+", 300, generateRandomHLAType()),
-                new Organ("K1", "Kidney", "B-", 150, generateRandomHLAType()),
-                new Organ("L1", "Liver", "O+", 1500, generateRandomHLAType())
-        );
 
-        List<Patient> patients = Arrays.asList(
-                new Patient("P1", "John Doe", "A+", 70, generateRandomHLAType()),
-                new Patient("P2", "Jane Smith", "B-", 65, generateRandomHLAType()),
-                new Patient("P3", "Bob Johnson", "O+", 80, generateRandomHLAType())
-        );
+        Patient johnDoe = new Patient("P001", "John Doe", "A+", 70, "HLA-A");
+        Patient janeSmith = new Patient("P002", "Jane Smith", "B-", 65, "HLA-B");
+        Patient bobJohnson = new Patient("P003", "Bob Johnson", "O+", 80, "HLA-A");
+        Patient aliceBrown = new Patient("P004", "Alice Brown", "AB-", 55, "HLA-C");
 
-        OrganManagementSystem system = new OrganManagementSystem(organs, patients);
-        OrganCompatibilityAnalyzer analyzer = new OrganCompatibilityAnalyzer();
-        organs.forEach(analyzer::addOrgan);
-        patients.forEach(analyzer::addPatient);
+        // Create patient waiting list
+        PatientWaitingList waitingList = new PatientWaitingList();
 
-        // Output as per assignment requirements
-        System.out.println("Available Organs:");
-        organs.forEach(o -> System.out.println(o.getId() + ". " + o.getName() + " (" + o.getBloodType() + ", " + o.getWeight() + "g)"));
+        // Add patients to the waiting list
+        waitingList.addPatient(aliceBrown);
+        waitingList.addPatient(bobJohnson);
+        waitingList.addPatient(janeSmith);
+        waitingList.addPatient(johnDoe);
 
-        System.out.println("\nPatients:");
-        patients.forEach(p -> System.out.println(p.getId() + ". " + p.getName() + " (" + p.getBloodType() + ", " + p.getWeight() + "kg)"));
+        // Print waiting list
+        waitingList.printWaitingList();
 
-        System.out.println("\nUnique Blood Types: " + system.getUniqueBloodTypes());
 
-        System.out.println("\nPatients Grouped by Blood Type:");
-        system.groupPatientsByBloodType().forEach((bloodType, patientList) ->
-                System.out.println(bloodType + ": " + patientList.stream().map(Patient::getName).collect(Collectors.toList())));
-
-        System.out.println("\nOrgans Sorted by Weight:");
-        system.sortOrgansByWeight().forEach(o ->
-                System.out.println(o.getName() + " (" + o.getBloodType() + ", " + o.getWeight() + "g)"));
-
-        System.out.println("\nCompatibility Scores:");
-        Map<Patient, List<Double>> scores = analyzer.calculateCompatibilityScores();
-        scores.forEach((patient, scoreList) -> {
-            for (int i = 0; i < organs.size(); i++) {
-                System.out.println(patient.getName() + " - " + organs.get(i).getName() + ": " + String.format("%.2f", scoreList.get(i)));
-            }
-        });
-
-        Patient patient = patients.get(0);
-        System.out.println("\nTop 3 Compatible Organs for: "+patient.getName());
-        List<Organ> topOrgans = system.getTopCompatibleOrgans(patient, 3);
-        for (int i = 0; i < topOrgans.size(); i++) {
-            Organ organ = topOrgans.get(i);
-            double score = analyzer.calculateCompatibilityScore(organ, patient);
-            System.out.println((i+1) + ". " + organ.getName() + " (" + organ.getBloodType() + ", " + organ.getWeight() + "g) - Score: " + String.format("%.2f", score));
+        // Add medical events to the patients
+        String[] events = {"Annual checkup","Flu vaccination","Broken arm surgery"};
+        System.out.println("\nAdding medical event to Alice's history: ");
+        for (String event : events) {
+            System.out.println("- " + event);
+            aliceBrown.addMedicalEvent(event);
         }
-    }
 
-    private static String generateRandomHLAType() {
-        Random random = new Random();
-        return random.ints(1, 10)
-                .limit(6)
-                .mapToObj(String::valueOf)
-                .collect(Collectors.joining("-"));
+        // View and remove the latest medical event from Alice's history
+        System.out.println("\nViewing Alice's latest medical event: " + aliceBrown.getHistory().viewLatestEvent());
+        System.out.println("Removing Alice's latest medical event: " + aliceBrown.removeMostRecentEvent());
+
+
+
+        // Create an organ
+        Organ cyberHeart = new Organ("O001", "CyberHeart-X1", "A+", 350, "HLA-A");
+
+        Patient nextPatient = waitingList.removeNextPatient();
+        System.out.println("\nProcessing the next patient for CyberHeart-X1 transplant:");
+        System.out.println("Matched CyberHeart-X1 to " + nextPatient.getName());
+
+        System.out.println("\nChecking " + nextPatient.getName() + "'s medical history for compatibility:");
+        while (!nextPatient.getHistory().isEmpty()) {
+            System.out.println("- " + nextPatient.getHistory().removeMostRecentEvent());
+        }
+
+        System.out.println("\n" + nextPatient.getName() + " is compatible with "+cyberHeart.getName()+"!\n");
+
+        waitingList.printWaitingList();
     }
 }
