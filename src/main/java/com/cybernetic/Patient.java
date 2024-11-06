@@ -1,44 +1,31 @@
 package com.cybernetic;
 
-import lombok.AccessLevel;
 import lombok.Data;
-import lombok.Setter;
+
+import java.util.HashMap;
+import java.util.Map;
 
 @Data
 public class Patient {
     private String id;
     private String name;
-    private String bloodType;
-    private int weight;
-    private String hlaType;
+    private Map<String, Double> measurements;  // Stores medical measurements
 
-
-    @Setter(AccessLevel.NONE)
-    private PatientHistory history;
-
-    public Patient(String id, String name,String bloodType, int weight, String hlaType) {
+    public Patient(String id, String name) {
         this.id = id;
         this.name = name;
-        this.bloodType = bloodType;
-        this.weight = weight;
-        this.hlaType = hlaType;
-        this.history = new PatientHistory();
+        this.measurements = new HashMap<>();
     }
 
-
-    public void addMedicalEvent(String medicalEvent) {
-        this.history.addMedicalEvent(medicalEvent);
+    public void addMeasurement(String type, double value) {
+        measurements.put(type, value);
     }
 
-    public String removeMostRecentEvent() {
-        return this.history.removeMostRecentEvent();
+    public Double getMeasurement(String type) {
+        return measurements.get(type);
     }
 
-    public String getName(){
-        return name;
-    }
-
-    public PatientHistory getHistory() {
-        return history;
+    public Map<String, Double> getAllMeasurements() {
+        return new HashMap<>(measurements);
     }
 }
