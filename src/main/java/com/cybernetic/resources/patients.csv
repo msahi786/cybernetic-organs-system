@@ -1,0 +1,16 @@
+id,name,age,bloodType,organNeeded,urgencyLevel,registrationDate,status
+PAT-0001,John Doe,25,A+,HEART,8,2024-01-01,WAITING
+PAT-0002,Jane Smith,45,B-,LUNG,6,2024-01-15,WAITING
+PAT-0003,Bob Johnson,65,O+,KIDNEY,9,2024-01-10,WAITING
+# Invalid: Age too high
+PAT-0004,Alice Brown,125,AB+,LIVER,7,2024-01-20,WAITING
+# Invalid: Invalid blood type
+PAT-0005,Charlie Davis,35,C+,HEART,5,2024-01-05,WAITING
+PAT-0006,Eva Wilson,55,O-,LUNG,8,2024-01-12,WAITING
+# Invalid: Urgency level too high
+PAT-0007,Frank Miller,42,A-,KIDNEY,12,2024-01-18,WAITING
+# Invalid: Invalid organ type
+PAT-0008,Grace Taylor,38,B+,BRAIN,4,2024-01-08,WAITING
+PAT-0009,Henry Adams,72,AB-,LIVER,7,2024-01-25,WAITING
+# Invalid: Negative age
+PAT-0010,Ivy Clark,-30,O+,HEART,6,2024-01-15,WAITING
